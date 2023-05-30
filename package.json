@@ -1,0 +1,9 @@
+{
+  "name": "parcel-tsconfig-extends-repro",
+  "packageManager": "yarn@3.5.1",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
