@@ -997,12 +997,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@test/tsconfig@workspace:*, @test/tsconfig@workspace:packages/tsconfig":
-  version: 0.0.0-use.local
-  resolution: "@test/tsconfig@workspace:packages/tsconfig"
-  languageName: unknown
-  linkType: soft
-
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -1014,6 +1008,13 @@ __metadata:
   version: 0.2.0
   resolution: "@trysound/sax@npm:0.2.0"
   checksum: 11226c39b52b391719a2a92e10183e4260d9651f86edced166da1d95f39a0a1eaa470e44d14ac685ccd6d3df7e2002433782872c0feeb260d61e80f21250e65c
+  languageName: node
+  linkType: hard
+
+"@tsconfig/recommended@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@tsconfig/recommended@npm:1.0.2"
+  checksum: 8dab26157fc9748ff2d090b95f4dbe2aeb592dbdcf90f373f712da5ac54ff24f66193e7ee68fdc45880e7f767cfeb339ef3e9970ca59608ef93225db047f0d16
   languageName: node
   linkType: hard
 
@@ -1085,15 +1086,6 @@ __metadata:
   checksum: 513b44c3b2105dd14cc42a19271e80f386466c4be574bccf60b627432f9198571ebf4ab1e4c3ba17347658f4ee1711c163d574248c0c1cdc2d5917a0ad582ec4
   languageName: node
   linkType: hard
-
-"app@workspace:packages/app":
-  version: 0.0.0-use.local
-  resolution: "app@workspace:packages/app"
-  dependencies:
-    "@test/tsconfig": "workspace:*"
-    parcel: ^2.9.1
-  languageName: unknown
-  linkType: soft
 
 "aproba@npm:^1.0.3 || ^2.0.0":
   version: 2.0.0
@@ -2415,6 +2407,9 @@ __metadata:
 "parcel-tsconfig-extends-repro@workspace:.":
   version: 0.0.0-use.local
   resolution: "parcel-tsconfig-extends-repro@workspace:."
+  dependencies:
+    "@tsconfig/recommended": ^1.0.2
+    parcel: ^2.9.1
   languageName: unknown
   linkType: soft
 
